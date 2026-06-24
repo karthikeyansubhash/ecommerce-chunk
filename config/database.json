@@ -1,0 +1,8 @@
+{
+  "driver": "postgresql",
+  "host": "localhost",
+  "port": 5432,
+  "database": "ecommerce_lite",
+  "pool_size": 5,
+  "schemas": ["users", "orders", "order_items", "inventory"]
+}

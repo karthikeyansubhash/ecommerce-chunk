@@ -1,0 +1,15 @@
+app_name: ecommerce-lite
+environment: development
+
+auth:
+  token_ttl_seconds: 3600
+  password_hash_algo: sha256   # see AuthService.validate_password
+
+inventory:
+  allow_backorders: false
+
+payments:
+  gateway_decline_rate: 0.0    # 0.0-1.0, used only by PaymentGatewayClient in tests
+
+notifications:
+  default_channel: email
