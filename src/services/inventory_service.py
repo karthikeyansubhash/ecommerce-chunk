@@ -49,7 +49,7 @@ class InventoryService:
         remaining_available = self.check_stock(sku) - self.reserved.get(sku, 0)
         if remaining_available <= self.low_stock_threshold:
             alert_message = (
-                f"Low stock alert: SKU '{sku}' has {remaining_available} units "
+                f"Low stock alert: SKU '{sku}' has {remaining_available} units testing"
                 f"remaining (threshold: {self.low_stock_threshold})"
             )
             if alert_message not in self.low_stock_alerts:
